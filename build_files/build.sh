@@ -72,7 +72,9 @@ cat >/usr/lib/sysusers.d/docker.conf <<'EOF'
 g docker -
 EOF
 
-dnf install -y plymouth
+dnf install -y plymouth cockpit cockpit-storaged cockpit-ws cockpit-pcp cockpit-machines cockpit-selinux bash-completion wget git firewalld micro
+
+systemctl enable cockpit.socket
 
 
 
