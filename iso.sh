@@ -1,4 +1,4 @@
-sudo podman pull ghcr.io/chepe-andres/homeserver:latest
+sudo podman pull ghcr.io/chepe-andres/xavier-server:latest
 mkdir output
 sudo podman run \
     --rm \
@@ -13,4 +13,4 @@ sudo podman run \
     --type iso \
     --use-librepo=True \
     --rootfs ext4 \
-    ghcr.io/chepe-andres/homeserver:latest
+    ghcr.io/chepe-andres/xavier-server:latest
