@@ -74,9 +74,9 @@ EOF
 
 #tailscale
 dnf config-manager --add-repo https://pkgs.tailscale.com/stable/centos/10/tailscale.rep
-dnf config-manager --set-disabled "tailscale-stable"
+dnf config-manager --set-disabled "tailscale"
 # FIXME: tailscale EPEL10 request: https://bugzilla.redhat.com/show_bug.cgi?id=2349099
-dnf -y --enablerepo "tailscale-stable" install \
+dnf -y --enablerepo "tailscale" install \
 	tailscale
 
 systemctl enable tailscaled
